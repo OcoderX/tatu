@@ -29,4 +29,4 @@ py nb.py
 
 #Bo'li tayyor !! Istalgan chatga  .nb buyrug'ini bering TAMOM
 
-## O'rnatish
+
