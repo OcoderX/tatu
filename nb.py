@@ -1,1 +1,18 @@
-from telethon import TelegramClient, events # pip install telethon   kodini terminalga tashlab oling avvalfrom config  import API_HASHd, API_IDd, bot_tokapi_id = API_IDdapi_hash = API_HASHdbot_token = bot_tokclient = TelegramClient('OcoderX', api_id, api_hash).start(bot_token=bot_token)@client.on(events.NewMessage(outgoing=True, pattern=r'[.!]nb'))async def nb_command(event):    await event.edit("Iltimos yigitlar ozroq kech qolaman nb qoʻymay tursin!")client.run_until_disconnected()
+from pyrogram import Client, filters, types
+from config import API_ID, API_HASH, TEXT
+
+
+if not API_HASH or API_ID == 1234:
+    # config.py fayliga yozmagan bo'lsangiz
+    # my.telegram.org dan olasiz
+    print("my.telegram.org dan olgan ma'lumotlaringizni kiriting")
+    API_ID = input("API_ID: ")
+    API_HASH = input("API_HASH: ")
+
+app = Client("userbot", API_ID, API_HASH)
+
+@app.on_message(filters.me & filters.command("nb", prefixes=[".", "!"]))
+async def nb_command(_, msg: types.Message):
+    await msg.edit_text(TEXT)
+
+app.run()

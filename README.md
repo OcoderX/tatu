@@ -1,32 +1,49 @@
 # Salom, Talabalar!
 
-Murodillo && OcoderX
+&copy; [Murodillo](t.me/murodillo17) & [OcoderX](t.me/OcoderX)
 
-Bu fayllar yordamida .nb so'zini istagan telegramdagi suhbat chatida yozsangiz sizni yozuvingizni buyruq ostida yotgan matnga o'zgartirib beradi !
 
 ## Qisqacha
+
+Bu kod yordamida `.nb` so'zini istagan telegramdagi suhbat chatida yozsangiz sizni yozuvingizni buyruq ostida yotgan matnga o'zgartirib beradi!
+
 
 
 ## O'rnatish
 
-O'rnatish jarayonini tushuntirish uchun kod bloki:
+> [!NOTE]
+> Sizda **git** va **python** o'rnatilgan bo'lishi kerak.
 
+Istalgan terminal (
+    **android** - [Termux](https://play.google.com/store/apps/details?id=com.termux), 
+    **Windows** - Powershell, CMD
+    ...
+) ga kirasiz.
+
+Istalgan papkaga kirasiz:
 ```bash
-#Buni kopiya qilib folder ni terminaldan turib kirib oling
 cd D:/
+```
 
-#endi buni terminalga yozing
+Ushbu reponi yuklab oling (clonlab):
+```bash
 git clone https://github.com/OcoderX/tatu.git
+```
 
-#endi Telethon'ni yuklab oling, terminalga:
-pip install telethon
+Pyrogram kutubxonasini o'rnating:
+```bash
+pip install pyrogram, tgcrypto
+```
 
-#ESLATMA:  birinchi login.py ga run beish kerak
-py login.py
 
-#Ro'yxatdan o'tib bo'lib endi nb.py ga run beramiz!
-py nb.py
+`nb.py` faylini ishga tushiring:
+```bash
+python nb.py
+```
 
-#Bo'li tayyor !! Istalgan chatga  .nb buyrug'ini bering TAMOM
+[my.telegram.org](https://my.telegram.org) dan olgan **API_ID** va **API_HASH** laringizni kiritasiz bo'ldi.
 
+## Tayyor!
+
+Bo'ldi endi istalgan chatda `.nb` deb yozsangiz bo'ladi.
 
