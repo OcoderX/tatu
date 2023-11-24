@@ -16,3 +16,5 @@ O'rnatish jarayonini tushuntirish uchun kod bloki:
 git clone https://github.com/username/repo.git
 cd repo
 npm install
+
+## O'rnatish
